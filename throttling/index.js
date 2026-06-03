@@ -1,18 +1,18 @@
 function throttle(func, wait) {
-  let shouldwait = false;
+  let shouldwait = false; //  this variable holds the pwer to decide should we allow or not
 
   return function () {
-    if (shouldwait) {
+    if (shouldwait) { // if true out of the fucntion not execution
       return;
     }
 
     func();
-    shouldwait = true;
+    shouldwait = true; // making it true so function get called 
 
     // put a setTimout so that no function gets called
 
     setTimeout(() => {
-      shouldwait = false;
+      shouldwait = false; // finally making it false because time has passed
     }, wait);
   };
 }

@@ -7,3 +7,5 @@ let newarr = arr.map((num) => {
 for(let value of newarr){
     console.log(value);
 }
+
+
