@@ -2,7 +2,6 @@
 const nums = [1, 1, 2, 2, 2, 3, 3];
 
 
-
 function findFrequent(nums){
     const map = new Map();
     for(let num  of nums){
